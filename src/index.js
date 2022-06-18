@@ -3,6 +3,19 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { initializeApp } from "firebase/app";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDehvAl5xmNNdBJs7vImoRVkICz0TgPUnU",
+  authDomain: "live-chat-react-app-ce96e.firebaseapp.com",
+  projectId: "live-chat-react-app-ce96e",
+  storageBucket: "live-chat-react-app-ce96e.appspot.com",
+  messagingSenderId: "236945108921",
+  appId: "1:236945108921:web:5ecf42beecda2cf9c9d068"
+};
+
+const app = initializeApp(firebaseConfig);
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
